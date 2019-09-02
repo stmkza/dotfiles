@@ -15,4 +15,8 @@
   # 安全設定
   alias cp='cp -i'
   alias rm='rm -i'
+
+  if [ -x "`which hub`" ]; then
+    function git() {hub "$@"}
+  fi
 }
