@@ -1,0 +1,10 @@
+ls ~
+ls ../files
+ls ../files/.zsh
+~/
+rm -rf .rbenv
+sudo rm -rf .rbenv
+ls
+cd -
+./deploy.sh
+exit
