@@ -10,11 +10,14 @@
   esac
 
   # mkdir
-  alias mkdir='mkdir -p'
+  alias mkdir='nocorrect mkdir -p'
 
   # 安全設定
-  alias cp='cp -i'
+  alias cp='nocorrect cp -i'
   alias rm='rm -i'
+
+  # nocorrect
+  alias mv='nocorrect mv'
 
   if [ -x "`which hub`" ]; then
     function git() {hub "$@"}

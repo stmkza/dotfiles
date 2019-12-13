@@ -12,6 +12,7 @@
   # 修正候補
   setopt correct
   setopt correct_all
+  CORRECT_IGNORE_FILE='.*'
 
   # 補完でヒストリ展開
   setopt hist_expand
