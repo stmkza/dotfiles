@@ -36,4 +36,24 @@
 
   # 検索キー Shift+右
   bindkey ';2C' history-beginning-search-forward
+
+  # pecoで履歴検索
+  case ${OSTYPE} in
+    darwin*)
+      function peco-history-selection() {
+        BUFFER=`\\history -n 1 | tail -r  | awk '!a[$0]++' | peco`
+        CURSOR=$#BUFFER
+        zle reset-prompt
+      }
+      ;;
+    *)
+      function peco-history-selection() {
+        BUFFER=`\\history -n 1 | tac  | awk '!a[$0]++' | peco`
+        CURSOR=$#BUFFER
+        zle reset-prompt
+      }
+      ;;
+  esac
+  zle -N peco-history-selection
+  bindkey '^R' peco-history-selection
 }
