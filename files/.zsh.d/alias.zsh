@@ -22,4 +22,7 @@
   if [ -x "`which hub`" ]; then
     function git() {hub "$@"}
   fi
+
+  # ghq
+  alias repos='ghq list -p | peco'
 }

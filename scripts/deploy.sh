@@ -7,3 +7,5 @@ ln -s "${FILES_DIR}/.zsh" "${HOME}/.zsh"
 ln -s "${FILES_DIR}/.zsh.d" "${HOME}/.zsh.d"
 ln -s "${FILES_DIR}/.zshrc" "${HOME}/.zshrc"
 
+git config --global ghq.root ~/repos
+
