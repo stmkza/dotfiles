@@ -6,6 +6,6 @@ fi
 ln -s "${FILES_DIR}/.zsh" "${HOME}/.zsh"
 ln -s "${FILES_DIR}/.zsh.d" "${HOME}/.zsh.d"
 ln -s "${FILES_DIR}/.zshrc" "${HOME}/.zshrc"
-
-git config --global ghq.root ~/repos
+ln -s "${FILES_DIR}/.gitconfig" "${HOME}/.gitconfig"
+ln -s "${FILES_DIR}/.gitignore_global" "${HOME}/.gitignore_global"
 

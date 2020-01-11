@@ -1,0 +1,27 @@
+[user]
+	name = stmkza
+	email = stmkza@stmkza.net
+	signingKey = F6F631E8DFE08654
+[core]
+	excludesfile = /Users/stmkza/.gitignore_global
+	autocrlf = input
+[commit]
+	gpgsign = true
+[alias]
+	cm=commit
+	c=commit
+	co=checkout
+	o=checkout
+	st=status
+	s=status
+	pl=pull
+	u=pull
+	ps=push
+	p=push
+	psr=!git push --set-upstream origin $(git symbolic-ref --short HEAD)
+	br=branch
+	b=branch
+	ad=add
+	a=add
+[ghq]
+	root = /Users/stmkza/repos
