@@ -25,4 +25,5 @@
 
   # ghq
   alias repos='ghq list -p | peco'
+  alias repo='cd $(repos)'
 }
