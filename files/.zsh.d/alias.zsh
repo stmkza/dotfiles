@@ -1,11 +1,11 @@
 : "Alias" && {
-  # lsで -al をして色つきにする
+  # lsdで -al をする
   case ${OSTYPE} in
     darwin*)
-      alias ls='ls -alG'
+      alias ls='lsd -al'
       ;;
     *)
-      alias ls='ls -al --color=auto'
+      alias ls='lsd -al'
       ;;
   esac
 
