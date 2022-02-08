@@ -55,4 +55,7 @@
 
   # sudoでも補完
   zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin /usr/sbin /usr/bin /sbin /bin
+
+  # DLLファイルを補完対象に含めない
+  zstyle ':completion:*:*:-command-:*:*' ignored-patterns '*?.(#i)dll'
 }
