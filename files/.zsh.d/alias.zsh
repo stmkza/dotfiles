@@ -24,6 +24,10 @@
   fi
 
   # ghq
-  alias repos='ghq list -p | peco'
-  alias repo='cd $(repos)'
+  function repo() {
+    local path=$(ghq list -p | peco)
+    if [ -n "$path" ]; then
+      cd "$path"
+    fi
+  }
 }
